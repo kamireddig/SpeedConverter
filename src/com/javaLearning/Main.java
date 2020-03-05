@@ -26,6 +26,9 @@ public class Main {
         }
     }
     public static void printConversion(double kilometersPerHour){
-        System.out.println("printConversion(" + kilometersPerHour + ") : " + kilometersPerHour + " km/h = " + toMilesPerHour(kilometersPerHour) + " mi/h");
+        if (kilometersPerHour < 0)
+            System.out.println("Invalid Value");
+        else
+            System.out.println("printConversion(" + kilometersPerHour + ") : " + kilometersPerHour + " km/h = " + toMilesPerHour(kilometersPerHour) + " mi/h");
     }
 }
